@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* You must use a DIFFERENT FONT THAT THIS ONE as your webfont */
+
+/*************************************************
+            DEFAULTS
+*************************************************/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+html{
+    font-size: 16px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    /* change this font stack to your own choices */
+    line-height: 1.5;
+}
+p{
+    
+}
+a{
+    
+}
+ul{
+    
+}
+ol{
+    
+}
+li{
+    
+}
+img{
+    width: 25%;
+}
+
+/*************************************************
+            HEADER
+*************************************************/
+header{
+    padding:1rem 2rem;
+    color: black;
+}
+header > h1{
+    
+}
+header > h2{
+    
+}
+/*************************************************
+            NAVMENU
+*************************************************/
+nav{
+    padding:1rem 2rem;
+}
+nav > a,
+nav > a:visited,
+nav > a:link{
+    
+}
+nav > a:active,
+nav > a:focus,
+nav > a:hover{
+    
+}
+
+/*************************************************
+            MAIN CONTENT
+*************************************************/
+main{
+    padding:1rem 2rem;
+}
+section{
+    
+}
+section p{
+    
+}
+section p img{
+    
+}
+
+/*************************************************
+            FOOTER
+*************************************************/
+footer{
+    padding:1rem 2rem;
+}
+.foot nav{
+    
+}
+.foot section{
+    
+}
+.foot dl{
+    
+}
+.foot dt{
+    
+}
+.foot dd{
+    
+}
+.foot dd a,
+.foot dd a:visited{
+    
+}
+.foot dd a:active,
+.foot dd a:focus,
+.foot dd a:hover{
+    
+}
+/*************************************************
+            MEDIA QUERIES for layout
+*************************************************/
+@media (max-width: 599px){
+    
+}
+@media (min-width: 600px) and (max-width:999px){
+    
+}
+@media (min-width: 1000px){
+    
+}
