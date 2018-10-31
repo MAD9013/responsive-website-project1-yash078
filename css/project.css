@@ -88,7 +88,10 @@ header > h2 {
 /*************************************************
             MAIN CONTENT
 *************************************************/
-
+main {
+    display:  flex;
+    flex-flow: column wrap;
+}
 section {
     /* forcing successive floats(img > img) to clear
     if viewing this on large screen! */
@@ -225,15 +228,14 @@ footer * {
     }
 
     main {
-        display: grid;
-        grid-column-gap: 4rem;
-        grid-row-gap: 0;
-        grid-template-columns: 1fr 1fr;
+        flex-flow: row wrap;
         justify-content: space-between;
     }
-
-    .minor-segment {
+    .sigment {
         width: 100%;
+    }
+    .minor-segment {
+        width: 45%;
     }
 
     .minor-segment img {
@@ -242,14 +244,9 @@ footer * {
         width: 100%;
     }
 
-    .first {
-        grid-column: 1/span 2;
-    }
-
     p {
         max-width: 100%;
     }
-}
 
 @media (min-width: 700px) {    /***** >=700 px  ***** (to fix mainnav wrapping issue around 600 - 700px) */
     .mainnav > a {
@@ -262,7 +259,6 @@ footer * {
         width: 80%;
     }
     main {
-        display: flex;
         justify-content: space-between;
         padding: 1rem 0;
     }
@@ -279,7 +275,7 @@ footer * {
     }
 
     .minor-segment {
-        width: 28%;
+        width: 25%;
     }
 
     section:last-child {
@@ -290,12 +286,16 @@ footer * {
         float: left;
         margin: 0 0.5rem 0.5rem 0;
         width: 50%;
+        box-shadow: 0 0 20px #555;
     }
 
     section h1,
     section h2 {
         margin: 0 0 1rem 0;
-        height: 2.5rem;
+        padding-bottom: 0.75rem;
+        height: 3.5rem;
+        display: table-cell;
+        vertical-align: bottom;
     }
 
     footer {
@@ -315,7 +315,7 @@ footer * {
         width: 100%;
     }
 
-    .form-box:first-child * {
+    .form-box:first-child input {
         width: 47%;
     }
 
